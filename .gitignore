@@ -22,8 +22,6 @@ playwright/.cache/
 coverage/
 dist/
 build/
-
-# Arquivos do sistema/editor
 .DS_Store
 Thumbs.db
 .vscode/
