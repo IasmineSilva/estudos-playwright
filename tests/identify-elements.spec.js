@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('identify elements: localiza botao e campos de login', async ({ page }) => {
+test(' localiza botao e campos de login', async ({ page }) => {
     await page.goto('https://react-redux.realworld.io/#/login');
 
     const signIn = page.getByRole('button', { name: /sign in/i });
