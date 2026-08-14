@@ -18,7 +18,7 @@ test.describe('Fluxo no SauceDemo - boas praticas', () => {
             await page.getByRole('button', { name: 'Login' }).click();
         });
 
-        await test.step('Valida redirecionamento para o inventario', async () => {
+        await test.step('Valida redirecionamento parnventario', async () => {
             await expect(page).toHaveURL(/\/inventory\.html$/);
             await expect(page.getByText('Products')).toBeVisible();
             await expect(page.locator('.inventory_item')).toHaveCount(6);
