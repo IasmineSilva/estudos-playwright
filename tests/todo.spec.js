@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('deve pesquisar no Google clicando em Pesquisar', async ({ page }) => {
+test('deve pesquisar no Google', async ({ page }) => {
     await page.goto('https://www.google.com/ncr?hl=pt-BR');
 
     const aceitarTudo = page.getByRole('button', { name: /Aceitar tudo|Accept all/i });
