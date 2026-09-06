@@ -16,7 +16,7 @@ const expect = require('expect');
     const html = await page.innerHTML('.feed-toggle')
     expect(html).toMatch('Your Feed')
 
-    // Screeshot
+
     await page.screenshot({path: 'SignIn.png', fullPage: true})
 
     await browser.close()
